@@ -90,8 +90,63 @@ import math
 #     print(list)
 
 # # 13
-# nombre = 0
+# nombre = 3
 # list = input("Entrez une liste de nombres : ")
-# while nombre < list:
-#     for :
-#         print(nombre)
+# while nombre > list 
+# 
+#     for lettre in list:
+#           if letter % 2 == 1:
+#               print(letter)
+#               nombre -= 1
+
+# # 15
+# liste = [17, 38, 10, 25, 72]
+# liste.sort()
+# liste.append(12)
+# liste.reverse()
+# print(liste.index(17))
+# liste.remove(38)
+# print(liste[1:3])
+# print(liste[:2])
+# print(liste[2:])
+# print(liste[:])
+
+# # 16
+# chaine = "Hello World"
+# inverse = chaine[::-1]
+# print(inverse)
+
+# # 17
+# same avec if else si chaine == inverse
+
+# # 18
+# email = "dodo.so@example.com"
+# if "@" in email and "." in email:
+#     dot_index = email.rindex(".") # on récupère l'indice du dernier point
+#     if len(email[dot_index+1:]) <= 3:
+#         print("La chaîne est un email.")
+#     else:
+#         print("La chaîne n'est pas un email.")
+# else:
+#     print("La chaîne n'est pas un email.")
+    
+# # 19
+# truc = []
+# machin = [0.0] * 5
+
+# # 20
+# print(list(range(4)))
+# print(list(range(4, 8)))
+# print(list(range(2, 9, 2)))
+# chose = list(range(6))
+# print(3 in chose)
+# print(6 in chose)
+
+# # 21
+# x = int(input("Entrez un nombre : "))
+# with open("data.txt", "w") as f:
+#     for i in range(x):
+#         chaine = input("Entrez une chaîne de caractères : ")
+#         f.write(chaine + "\n")
+
+# # 22
