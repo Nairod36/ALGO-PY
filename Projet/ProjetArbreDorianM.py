@@ -14,7 +14,7 @@ class AB:
         else:
             return "(" + str(self.gauche) + ',' + str(self.racine[0]) +',' + str(self.droite) + ")"
 
-    
+    #Getters et setters
     def get_racine(self):
         return self.racine
     
@@ -68,13 +68,14 @@ class AB:
         return sufixe_gauche + sufixe_droite + [self.racine[0]]
     
     def infixe(self):
-        if self.estVide():
+        if self.estVide(): #vérifie si l'arbre est vide, auquel cas elle retourne une liste vide
             return []
         else:
-            infixe_gauche = []
-        if self.gauche is not None:
+            infixe_gauche = [] #initialise une liste vide pour les éléments dans le sous-arbre gauche
+        if self.gauche is not None: #vérifie si le sous-arbre gauche existe et appelle la méthode infixe() sur ce sous-arbre. 
+            #La liste retournée est stockée dans la variable infixe_gauche.
             infixe_gauche = self.gauche.infixe()
-        infixe_droite = []
+        infixe_droite = [] #initialise une liste vide pour les éléments dans le sous-arbre droite
         if self.droite is not None:
             infixe_droite = self.droite.infixe()
         return infixe_gauche + [self.racine] + infixe_droite
@@ -139,6 +140,9 @@ class AB:
     
         return True
 
+
+    #Dans les deux cas, 
+    # la méthode retourne le nouveau pivot qui est désormais la nouvelle racine de l'arbre après la rotation.
     
     def rotation_droite(self):
         if self.gauche is None:
